@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforma Tributária Brasileira - Guia Completo do IVA Dual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="BB Gcash.png" alt="Logo" class="logo-icon">
+                    <div class="logo-text">
+                        <span class="logo-title">Reforma Tributária</span>
+                        <span class="logo-subtitle">IVA Dual Brasil</span>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <button class="nav-btn active" data-section="overview">Visão Geral</button>
+                    <button class="nav-btn" data-section="simulator">Simulador</button>
+                    <button class="nav-btn" data-section="education">Educativo</button>
+                    <button class="nav-btn" data-section="timeline">Cronograma</button>
+                    <button class="nav-btn" data-section="cash-management">Cash Management</button>
+                    <button class="nav-btn" data-section="glossary">Glossário</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Seção 1: Visão Geral da Reforma -->
+        <section id="overview" class="section active">
+            <div class="container">
+                <div class="hero-section">
+                    <h1>Reforma Tributária Brasileira: O Sistema IVA Dual</h1>
+                    <p class="hero-subtitle">Entenda as mudanças que transformarão o sistema tributário nacional de 2026 a 2033</p>
+                </div>
+
+                <!-- Comparação Sistema Atual vs Novo -->
+                <div class="comparison-section">
+                    <h2>Sistema Atual vs Novo Sistema</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-card current">
+                            <h3>Sistema Atual (Até 2025)</h3>
+                            <div class="tax-list">
+                                <h4>Tributos sobre Consumo</h4>
+                                <ul>
+                                    <li>IPI (Federal)</li>
+                                    <li>PIS/COFINS (Federal)</li>
+                                    <li>ICMS (Estadual)</li>
+                                    <li>ISS (Municipal)</li>
+                                </ul>
+                            </div>
+                            <div class="problems">
+                                <h4>Principais Problemas</h4>
+                                <ul>
+                                    <li>Complexidade excessiva</li>
+                                    <li>Cumulatividade</li>
+                                    <li>Guerra fiscal</li>
+                                    <li>Alto custo de conformidade</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="comparison-card new">
+                            <h3>Novo Sistema (A partir de 2026)</h3>
+                            <div class="tax-list">
+                                <h4>IVA Dual</h4>
+                                <ul>
+                                    <li><strong>CBS</strong> - Contribuição sobre Bens e Serviços (8,8%)</li>
+                                    <li><strong>IBS</strong> - Imposto sobre Bens e Serviços (17,7%)</li>
+                                    <li><strong>Imposto Seletivo</strong> ("Sin Tax")</li>
+                                </ul>
+                            </div>
+                            <div class="benefits">
+                                <h4>Principais Benefícios</h4>
+                                <ul>
+                                    <li>Simplificação tributária</li>
+                                    <li>Não-cumulatividade plena</li>
+                                    <li>Split Payment</li>
+                                    <li>Cashback para baixa renda</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estrutura do IVA Dual -->
+                <div class="dual-iva-structure">
+                    <h2>Estrutura do IVA Dual</h2>
+                    <div class="iva-cards">
+                        <div class="iva-card cbs">
+                            <div class="iva-header">
+                                <h3>CBS</h3>
+                                <span class="rate">8,8%</span>
+                            </div>
+                            <div class="iva-body">
+                                <p><strong>Contribuição sobre Bens e Serviços</strong></p>
+                                <p>Competência: União</p>
+                                <p>Substitui: PIS, COFINS, IPI, IOF-Seguros</p>
+                                <div class="governance">
+                                    <h4>Gestão</h4>
+                                    <p>Receita Federal do Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="iva-card ibs">
+                            <div class="iva-header">
+                                <h3>IBS</h3>
+                                <span class="rate">17,7%</span>
+                            </div>
+                            <div class="iva-body">
+                                <p><strong>Imposto sobre Bens e Serviços</strong></p>
+                                <p>Competência: Estados e Municípios</p>
+                                <p>Substitui: ICMS e ISS</p>
+                                <div class="governance">
+                                    <h4>Gestão</h4>
+                                    <p>Comitê Gestor (Governadores + Prefeitos)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="iva-card selective">
+                            <div class="iva-header">
+                                <h3>Imposto Seletivo</h3>
+                                <span class="rate">Variável</span>
+                            </div>
+                            <div class="iva-body">
+                                <p><strong>"Sin Tax"</strong></p>
+                                <p>Objetivo: Desestimular consumo prejudicial</p>
+                                <p>Produtos: Cigarros, bebidas alcoólicas, veículos poluentes</p>
+                                <div class="governance">
+                                    <h4>Vigência</h4>
+                                    <p>A partir de 2033</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regimes Diferenciados -->
+                <div class="special-regimes">
+                    <h2>Regimes Diferenciados</h2>
+                    <div class="regimes-grid">
+                        <div class="regime-card reduction-50">
+                            <h3>Redução de 50%</h3>
+                            <ul>
+                                <li>Educação</li>
+                                <li>Saúde</li>
+                                <li>Transporte</li>
+                            </ul>
+                            <div class="rate-info">
+                                <span>CBS: 4,4% | IBS: 8,85%</span>
+                            </div>
+                        </div>
+
+                        <div class="regime-card reduction-100">
+                            <h3>Isenção Total (100%)</h3>
+                            <ul>
+                                <li>ProUni</li>
+                                <li>Medicamentos especiais</li>
+                                <li>Cesta básica</li>
+                            </ul>
+                            <div class="rate-info">
+                                <span>CBS: 0% | IBS: 0%</span>
+                            </div>
+                        </div>
+
+                        <div class="regime-card cashback">
+                            <h3>Cashback</h3>
+                            <ul>
+                                <li>População de baixa renda</li>
+                                <li>Mecanismo: CPF na nota</li>
+                                <li>Devolução parcial do IBS</li>
+                            </ul>
+                            <div class="rate-info">
+                                <span>Vigência: 2033</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alíquota Total -->
+                <div class="total-rate-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <h2>Alíquota Total Padrão</h2>
+                            <div class="rate-calculation">
+                                <div class="rate-item">
+                                    <span>CBS</span>
+                                    <span class="rate-value">8,8%</span>
+                                </div>
+                                <div class="rate-operator">+</div>
+                                <div class="rate-item">
+                                    <span>IBS</span>
+                                    <span class="rate-value">17,7%</span>
+                                </div>
+                                <div class="rate-operator">=</div>
+                                <div class="rate-total">
+                                    <span>Total</span>
+                                    <span class="rate-value total">26,5%</span>
+                                </div>
+                            </div>
+                            <p class="rate-note">Esta alíquota será aplicada à maioria dos produtos e serviços, garantindo neutralidade tributária e simplificação do sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Simulador Avançado -->
+        <section id="simulator" class="section">
+            <div class="container">
+                <h1>Simulador de Split Payment</h1>
+                <p class="section-subtitle">Calcule os tributos sob o novo sistema IVA Dual</p>
+
+                <div class="simulator-container">
+                    <div class="simulator-form card">
+                        <div class="card__body">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label">Valor da Operação (R$)</label>
+                                    <input type="number" id="valorOperacao" class="form-control" value="100000" min="0" step="0.01">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Setor/Categoria</label>
+                                    <select id="setorCategoria" class="form-control">
+                                        <option value="padrao">Padrão (26,5%)</option>
+                                        <option value="educacao">Educação (Redução 50%)</option>
+                                        <option value="saude">Saúde (Redução 50%)</option>
+                                        <option value="transporte">Transporte (Redução 50%)</option>
+                                        <option value="prouni">ProUni (Isenção Total)</option>
+                                        <option value="medicamentos">Medicamentos Especiais (Isenção)</option>
+                                        <option value="cesta_basica">Cesta Básica (Isenção)</option>
+                                        <option value="tabaco">Tabaco (Com Seletivo)</option>
+                                        <option value="bebidas">Bebidas Alcoólicas (Com Seletivo)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn--primary btn--full-width" onclick="calcularSimulacao()">
+                                        Calcular Tributos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simulator-results">
+                        <div class="results-grid">
+                            <div class="result-card cbs-result">
+                                <div class="result-header">
+                                    <h3>CBS</h3>
+                                    <span class="result-percentage" id="cbsRate">8,8%</span>
+                                </div>
+                                <div class="result-value" id="cbsValue">R$ 8.800,00</div>
+                                <div class="result-description">Contribuição sobre Bens e Serviços</div>
+                            </div>
+
+                            <div class="result-card ibs-result">
+                                <div class="result-header">
+                                    <h3>IBS</h3>
+                                    <span class="result-percentage" id="ibsRate">17,7%</span>
+                                </div>
+                                <div class="result-value" id="ibsValue">R$ 17.700,00</div>
+                                <div class="result-description">Imposto sobre Bens e Serviços</div>
+                            </div>
+
+                            <div class="result-card selective-result">
+                                <div class="result-header">
+                                    <h3>Imposto Seletivo</h3>
+                                    <span class="result-percentage" id="selectiveRate">0%</span>
+                                </div>
+                                <div class="result-value" id="selectiveValue">R$ 0,00</div>
+                                <div class="result-description">"Sin Tax" para produtos específicos</div>
+                            </div>
+
+                            <div class="result-card total-result">
+                                <div class="result-header">
+                                    <h3>Total de Tributos</h3>
+                                    <span class="result-percentage" id="totalRate">26,5%</span>
+                                </div>
+                                <div class="result-value" id="totalTributos">R$ 26.500,00</div>
+                                <div class="result-description">CBS + IBS + Seletivo</div>
+                            </div>
+
+                            <div class="result-card final-result">
+                                <div class="result-header">
+                                    <h3>Valor Líquido</h3>
+                                    <span class="result-icon">💰</span>
+                                </div>
+                                <div class="result-value final" id="valorLiquido">R$ 73.500,00</div>
+                                <div class="result-description">Valor após dedução dos tributos</div>
+                            </div>
+
+                            <div class="result-card split-info">
+                                <div class="result-header">
+                                    <h3>Split Payment</h3>
+                                    <span class="result-icon">🔄</span>
+                                </div>
+                                <div class="split-flow">
+                                    <div class="split-step">Cliente → PSP</div>
+                                    <div class="split-step">PSP → Empresa (Líquido)</div>
+                                    <div class="split-step">PSP → Receita/Comitê (Tributos)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemplos Práticos -->
+                    <div class="examples-section">
+                        <h2>Exemplos Práticos por Setor</h2>
+                        <div class="examples-grid" id="examplesGrid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Educativa -->
+        <section id="education" class="section">
+            <div class="container">
+                <h1>Como Funciona o IVA Dual</h1>
+                
+                <!-- Conceitos Fundamentais -->
+                <div class="education-section">
+                    <h2>Por que IVA Dual?</h2>
+                    <div class="concept-grid">
+                        <div class="concept-card">
+                            <h3>Questão Federativa</h3>
+                            <p>O Brasil adotou o sistema dual para preservar a autonomia tributária de Estados e Municípios, mantendo sua competência através do IBS, enquanto a União mantém sua competência através da CBS.</p>
+                        </div>
+                        
+                        <div class="concept-card">
+                            <h3>IVA vs IVA Dual</h3>
+                            <p>Enquanto o IVA tradicional é um imposto único, o IVA Dual brasileiro divide a tributação entre dois impostos com a mesma metodologia de cobrança, preservando o pacto federativo.</p>
+                        </div>
+                        
+                        <div class="concept-card">
+                            <h3>Valor Agregado</h3>
+                            <p>A tributação incide apenas sobre o valor agregado em cada etapa da cadeia produtiva, eliminando a cumulatividade através do sistema de créditos e débitos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Como funciona na prática -->
+                <div class="value-chain-section">
+                    <h2>Cadeia de Valor Agregado</h2>
+                    <div class="chain-visualization">
+                        <div class="chain-step">
+                            <div class="step-box">
+                                <h3>Indústria</h3>
+                                <div class="step-values">
+                                    <div>Venda: R$ 1.000</div>
+                                    <div>CBS: R$ 88</div>
+                                    <div>IBS: R$ 177</div>
+                                </div>
+                            </div>
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="chain-step">
+                            <div class="step-box">
+                                <h3>Distribuidor</h3>
+                                <div class="step-values">
+                                    <div>Venda: R$ 1.500</div>
+                                    <div>Valor Agregado: R$ 500</div>
+                                    <div>Tributo: R$ 132,50</div>
+                                </div>
+                            </div>
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="chain-step">
+                            <div class="step-box">
+                                <h3>Varejo</h3>
+                                <div class="step-values">
+                                    <div>Venda: R$ 2.000</div>
+                                    <div>Valor Agregado: R$ 500</div>
+                                    <div>Tributo: R$ 132,50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chain-explanation">
+                        <h3>Sistema de Créditos</h3>
+                        <p>Cada etapa da cadeia pode se creditar dos tributos pagos na etapa anterior, garantindo que a tributação incida apenas sobre o valor agregado de cada participante.</p>
+                    </div>
+                </div>
+
+                <!-- Comitê Gestor -->
+                <div class="committee-section">
+                    <h2>Comitê Gestor do IBS</h2>
+                    <div class="committee-info">
+                        <div class="committee-card">
+                            <h3>Composição</h3>
+                            <ul>
+                                <li>Representantes dos Governadores</li>
+                                <li>Representantes dos Prefeitos</li>
+                                <li>Representantes da sociedade civil</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="committee-card">
+                            <h3>Funções</h3>
+                            <ul>
+                                <li>Definir regulamentações do IBS</li>
+                                <li>Fiscalizar arrecadação</li>
+                                <li>Distribuir recursos entre entes</li>
+                                <li>Harmonizar procedimentos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Cronograma -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h1>Cronograma de Implementação</h1>
+                <p class="section-subtitle">Transição gradual do sistema atual para o IVA Dual (2026-2033)</p>
+
+                <div class="timeline-container">
+                    <div class="timeline-item" data-year="2026">
+                        <div class="timeline-marker test"></div>
+                        <div class="timeline-content">
+                            <h3>2026 - Ano de Testes</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>CBS teste: 0,9%</li>
+                                    <li>IBS teste: 0,1%</li>
+                                    <li>Compensação via PIS/COFINS/IPI</li>
+                                    <li>Período de adaptação dos sistemas</li>
+                                    <li>Treinamento de contribuintes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2027">
+                        <div class="timeline-marker implementation"></div>
+                        <div class="timeline-content">
+                            <h3>2027 - CBS Entra em Vigor</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Extinção do PIS e COFINS</li>
+                                    <li>IPI zerado para Zona Franca de Manaus</li>
+                                    <li>CBS aplicada parcialmente</li>
+                                    <li>Início do split payment para CBS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2028">
+                        <div class="timeline-marker full"></div>
+                        <div class="timeline-content">
+                            <h3>2028 - CBS na Totalidade</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>CBS aplicada integralmente (8,8%)</li>
+                                    <li>Sistema de créditos pleno para CBS</li>
+                                    <li>Extinção definitiva do IPI</li>
+                                    <li>Aperfeiçoamento dos sistemas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2029-2032">
+                        <div class="timeline-marker transition"></div>
+                        <div class="timeline-content">
+                            <h3>2029-2032 - Transição do IBS</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Redução gradual do ICMS e ISS</li>
+                                    <li>Elevação progressiva do IBS</li>
+                                    <li>Harmonização entre estados</li>
+                                    <li>Preparação para o sistema completo</li>
+                                    <li>Ajustes nas alíquotas regionais</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2033">
+                        <div class="timeline-marker complete"></div>
+                        <div class="timeline-content">
+                            <h3>2033 - Sistema Completo</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>IVA Dual funcionando plenamente</li>
+                                    <li>Implementação do Imposto Seletivo</li>
+                                    <li>Sistema de cashback ativo</li>
+                                    <li>Extinção total do ICMS e ISS</li>
+                                    <li>CPF na nota obrigatório</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outros Impactos -->
+                <div class="other-impacts">
+                    <h2>Outros Tributos Impactados</h2>
+                    <div class="impacts-grid">
+                        <div class="impact-card">
+                            <h3>IPVA</h3>
+                            <ul>
+                                <li>Progressividade por valor de mercado</li>
+                                <li>Consideração do impacto ambiental</li>
+                                <li>Inclusão de veículos aquáticos e aéreos</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-card">
+                            <h3>ITCMD</h3>
+                            <ul>
+                                <li>Alíquota progressiva por valor</li>
+                                <li>Competência por domicílio do de cujus/doador</li>
+                                <li>Harmonização entre estados</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-card">
+                            <h3>IPTU</h3>
+                            <ul>
+                                <li>Atualização via decreto municipal</li>
+                                <li>Dispensa de tramitação na câmara</li>
+                                <li>Maior agilidade na atualização</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Cash Management -->
+        <section id="cash-management" class="section">
+            <div class="container">
+                <h1>Ferramentas para Cash Management</h1>
+                <p class="section-subtitle">Análises e projeções para orientação consultiva</p>
+
+                <!-- Calculadora de Impacto -->
+                <div class="impact-calculator">
+                    <div class="card">
+                        <div class="card__body">
+                            <h2>Calculadora de Impacto no Fluxo de Caixa</h2>
+                            <div class="calculator-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label">Faturamento Mensal (R$)</label>
+                                        <input type="number" id="faturamentoMensal" class="form-control" value="1000000">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Setor Principal</label>
+                                        <select id="setorPrincipal" class="form-control">
+                                            <option value="tecnologia">Tecnologia</option>
+                                            <option value="comercio">Comércio</option>
+                                            <option value="servicos">Serviços</option>
+                                            <option value="industria">Indústria</option>
+                                            <option value="educacao">Educação</option>
+                                            <option value="saude">Saúde</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <button class="btn btn--primary" onclick="calcularImpactoFluxo()">Calcular Impacto</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultados do Impacto -->
+                <div class="impact-results" id="impactResults" style="display: none;">
+                    <div class="results-comparison">
+                        <div class="comparison-card current-system">
+                            <h3>Sistema Atual (Estimativa)</h3>
+                            <div class="system-details">
+                                <div class="tax-item">
+                                    <span>PIS/COFINS (9,25%)</span>
+                                    <span id="pisCofinsCurrent">R$ 92.500</span>
+                                </div>
+                                <div class="tax-item">
+                                    <span>ICMS/ISS (18%)</span>
+                                    <span id="icmsIssCurrent">R$ 180.000</span>
+                                </div>
+                                <div class="total-tax">
+                                    <span>Total Atual</span>
+                                    <span id="totalCurrent">R$ 272.500</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison-card new-system">
+                            <h3>Novo Sistema (IVA Dual)</h3>
+                            <div class="system-details">
+                                <div class="tax-item">
+                                    <span>CBS (8,8%)</span>
+                                    <span id="cbsNew">R$ 88.000</span>
+                                </div>
+                                <div class="tax-item">
+                                    <span>IBS (17,7%)</span>
+                                    <span id="ibsNew">R$ 177.000</span>
+                                </div>
+                                <div class="total-tax">
+                                    <span>Total Novo</span>
+                                    <span id="totalNew">R$ 265.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison-result">
+                            <h3>Impacto</h3>
+                            <div class="impact-value" id="impactValue">
+                                <span class="impact-amount">-R$ 7.500</span>
+                                <span class="impact-percentage">-2,8%</span>
+                            </div>
+                            <p class="impact-description">Redução na carga tributária mensal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Análise Setorial -->
+                <div class="sectoral-analysis">
+                    <h2>Análise por Setor</h2>
+                    <div class="analysis-grid">
+                        <div class="analysis-card positive">
+                            <h3>Setores Beneficiados</h3>
+                            <ul>
+                                <li><strong>Educação:</strong> Redução de 50% na carga</li>
+                                <li><strong>Saúde:</strong> Redução de 50% na carga</li>
+                                <li><strong>Tecnologia:</strong> Fim da cumulatividade</li>
+                                <li><strong>Serviços:</strong> Simplificação tributária</li>
+                            </ul>
+                        </div>
+
+                        <div class="analysis-card neutral">
+                            <h3>Setores com Impacto Neutro</h3>
+                            <ul>
+                                <li><strong>Comércio:</strong> Alíquota similar ao atual</li>
+                                <li><strong>Indústria:</strong> Compensação via créditos</li>
+                                <li><strong>Construção:</strong> Mantém tributação similar</li>
+                            </ul>
+                        </div>
+
+                        <div class="analysis-card attention">
+                            <h3>Setores com Atenção</h3>
+                            <ul>
+                                <li><strong>Bebidas:</strong> Imposto Seletivo adicional</li>
+                                <li><strong>Tabaco:</strong> Sin Tax significativo</li>
+                                <li><strong>Veículos:</strong> Possível seletivo ambiental</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recomendações Consultivas -->
+                <div class="consultative-recommendations">
+                    <h2>Recomendações Estratégicas</h2>
+                    <div class="recommendations-list">
+                        <div class="recommendation-item">
+                            <h3>🔄 Preparação para Split Payment</h3>
+                            <p>Adequar sistemas de pagamento e conciliação para receber valores líquidos automaticamente, com tributos recolhidos diretamente pelo PSP.</p>
+                        </div>
+
+                        <div class="recommendation-item">
+                            <h3>💳 Revisão de Fluxo de Caixa</h3>
+                            <p>Ajustar projeções financeiras considerando o novo timing de recebimento e a eliminação de obrigações acessórias complexas.</p>
+                        </div>
+
+                        <div class="recommendation-item">
+                            <h3>🎯 Planejamento Tributário</h3>
+                            <p>Reavaliar estruturas societárias e operacionais para aproveitar os benefícios da não-cumulatividade plena do novo sistema.</p>
+                        </div>
+
+                        <div class="recommendation-item">
+                            <h3>📊 Gestão de Créditos</h3>
+                            <p>Implementar controles rigorosos para aproveitamento total dos créditos fiscais, maximizando os benefícios do sistema de débito e crédito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 6: Glossário -->
+        <section id="glossary" class="section">
+            <div class="container">
+                <h1>Glossário e FAQ</h1>
+                <p class="section-subtitle">Termos técnicos e perguntas frequentes sobre a Reforma Tributária</p>
+
+                <!-- Termos Técnicos -->
+                <div class="glossary-section">
+                    <h2>Termos Técnicos</h2>
+                    <div class="glossary-grid">
+                        <div class="glossary-item">
+                            <h3>IVA Dual</h3>
+                            <p>Sistema de Imposto sobre Valor Agregado dividido em duas competências: CBS (União) e IBS (Estados/Municípios), mantendo a mesma metodologia de cobrança.</p>
+                        </div>
+
+                        <div class="glossary-item">
+                            <h3>Split Payment</h3>
+                            <p>Mecanismo onde o Provedor de Serviços de Pagamento (PSP) divide automaticamente o valor da transação: parte para a empresa e parte para o governo (tributos).</p>
+                        </div>
+
+                        <div class="glossary-item">
+                            <h3>Não-Cumulatividade</h3>
+                            <p>Princípio que permite deduzir os tributos pagos nas etapas anteriores da cadeia produtiva, evitando tributação em cascata.</p>
+                        </div>
+
+                        <div class="glossary-item">
+                            <h3>Valor Agregado</h3>
+                            <p>Diferença entre o valor de venda e o valor de compra de bens e serviços, representando o valor efetivamente adicionado pela empresa.</p>
+                        </div>
+
+                        <div class="glossary-item">
+                            <h3>Comitê Gestor</h3>
+                            <p>Órgão colegiado responsável pela gestão do IBS, composto por representantes dos estados, municípios e sociedade civil.</p>
+                        </div>
+
+                        <div class="glossary-item">
+                            <h3>Sin Tax</h3>
+                            <p>Imposto Seletivo aplicado a produtos considerados prejudiciais à saúde ou ao meio ambiente, com objetivo de desestimular o consumo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="faq-section">
+                    <h2>Perguntas Frequentes</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Quando a reforma tributária entra em vigor?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>A implementação será gradual: testes em 2026, CBS a partir de 2027, IBS de 2029-2032, e sistema completo em 2033.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>O que é o split payment e como funciona?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>O split payment é um mecanismo onde o PSP automaticamente separa o pagamento: uma parte vai para a empresa (valor líquido) e outra vai diretamente para o governo (tributos), eliminando a necessidade de recolhimento manual.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Quem tem direito ao cashback?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>O cashback será destinado à população de baixa renda através do mecanismo de CPF na nota, devolvendo parte do IBS pago em compras.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Como funcionará o sistema de créditos?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Empresas poderão se creditar dos tributos pagos nas aquisições, deduzindo-os dos tributos devidos nas vendas, garantindo que a tributação incida apenas sobre o valor agregado.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Quais setores terão redução de tributos?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Educação, saúde e transporte terão 50% de redução. ProUni, medicamentos especiais e cesta básica terão isenção total (100% de redução).</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>O que acontece com ICMS e ISS?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>ICMS e ISS serão gradualmente extintos entre 2029 e 2033, sendo substituídos pelo IBS, que unifica a tributação estadual e municipal sobre bens e serviços.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="useful-links">
+                    <h2>Links Úteis</h2>
+                    <div class="links-grid">
+                        <div class="link-card">
+                            <h3>📋 Legislação Oficial</h3>
+                            <ul>
+                                <li><a href="#" target="_blank">Emenda Constitucional 132/2023</a></li>
+                                <li><a href="#" target="_blank">Lei Complementar da CBS</a></li>
+                                <li><a href="#" target="_blank">Lei Complementar do IBS</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-card">
+                            <h3>🏛️ Órgãos Oficiais</h3>
+                            <ul>
+                                <li><a href="#" target="_blank">Receita Federal do Brasil</a></li>
+                                <li><a href="#" target="_blank">Ministério da Fazenda</a></li>
+                                <li><a href="#" target="_blank">Comitê Gestor do IBS</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-card">
+                            <h3>📚 Material Educativo</h3>
+                            <ul>
+                                <li><a href="#" target="_blank">Cartilha da Reforma Tributária</a></li>
+                                <li><a href="#" target="_blank">Simuladores Oficiais</a></li>
+                                <li><a href="#" target="_blank">Webinars e Treinamentos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
