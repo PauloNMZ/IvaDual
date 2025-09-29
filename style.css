@@ -762,14 +762,16 @@ select.form-control {
     0 6px 20px rgba(107, 114, 128, 0.3),
     0 2px 8px rgba(0, 0, 0, 0.4);
   border: none;
-  padding: var(--space-80) var(--space-24) var(--space-48) var(--space-24);
+  padding: var(--space-24) var(--space-24) var(--space-48) var(--space-24);
 }
 
 .dark-theme .hero-badge {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    color: #1f2937;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: rgba(31, 41, 55, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgb(209, 213, 219);
+    padding: var(--space-12) var(--space-20);
+    gap: var(--space-12);
+    transition: all 0.3s ease;
 }
 
 .dark-theme .hero-title {
@@ -869,8 +871,8 @@ select.form-control {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     border-radius: var(--radius-sm);
 }
@@ -954,7 +956,7 @@ select.form-control {
 /* Overview Section Styles */
 .hero-section {
     text-align: center;
-    padding: var(--space-80) var(--space-24) var(--space-48) var(--space-24);
+    padding: var(--space-24) var(--space-24) var(--space-48) var(--space-24);
     background: linear-gradient(135deg, 
         #1e40af 0%,
         #3b82f6 25%,
@@ -978,22 +980,23 @@ select.form-control {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    padding-top: var(--space-32);
 }
 
 .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-8);
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    gap: var(--space-12);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: var(--radius-full);
-    padding: var(--space-8) var(--space-16);
+    padding: var(--space-12) var(--space-20);
     margin-bottom: var(--space-24);
     font-size: var(--text-sm);
     font-weight: 600;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: rgb(55, 65, 81);
+    transition: all 0.3s ease;
 }
 
 .badge-icon {
@@ -1001,12 +1004,22 @@ select.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
 }
 
 .badge-icon svg {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     color: currentColor;
+    stroke-width: 2.5;
+}
+
+.badge-icon img {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border-radius: 0;
+}
 }
 
 .hero-title {

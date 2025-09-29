@@ -70,6 +70,22 @@ function formatCurrency(value) {
     }).format(value);
 }
 
+// Função para formatar input monetário
+function formatCurrencyInput(input) {
+    let value = input.value.replace(/\D/g, ''); // Remove tudo que não é dígito
+    value = (value / 100).toFixed(2); // Converte para decimal
+    value = value.replace('.', ','); // Troca ponto por vírgula
+    value = value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.'); // Adiciona pontos de milhares
+    input.value = 'R$ ' + value;
+}
+
+// Função para extrair valor numérico do input formatado
+function parseCurrencyInput(input) {
+    let value = input.value.replace(/[^\d,]/g, ''); // Remove tudo exceto dígitos e vírgula
+    value = value.replace(',', '.'); // Troca vírgula por ponto
+    return parseFloat(value) || 0;
+}
+
 // Função para formatar percentual
 function formatPercent(value) {
     return value.toFixed(1) + '%';
@@ -280,7 +296,28 @@ function initializeCashManagement() {
     const setorSelect = document.getElementById('setorPrincipal');
     
     if (faturamentoInput && !faturamentoInput.dataset.listenerAdded) {
-        faturamentoInput.addEventListener('input', calcularImpactoFluxo);
+        // Formatar valor inicial
+        faturamentoInput.value = 'R$ 1.000.000,00';
+        
+        // Adicionar eventos de formatação
+        faturamentoInput.addEventListener('input', function() {
+            formatCurrencyInput(this);
+            calcularImpactoFluxo();
+        });
+        
+        faturamentoInput.addEventListener('focus', function() {
+            if (this.value === 'R$ 0,00') {
+                this.value = '';
+            }
+        });
+        
+        faturamentoInput.addEventListener('blur', function() {
+            if (this.value === '' || this.value === 'R$ ') {
+                this.value = 'R$ 0,00';
+            }
+            calcularImpactoFluxo();
+        });
+        
         faturamentoInput.dataset.listenerAdded = 'true';
     }
     
@@ -303,7 +340,7 @@ function calcularImpactoFluxo() {
         return;
     }
     
-    const faturamento = parseFloat(faturamentoInput.value) || 1000000;
+    const faturamento = parseCurrencyInput(faturamentoInput) || 1000000;
     const setor = setorSelect.value || 'tecnologia';
     
     // Sistema atual (estimativa)
