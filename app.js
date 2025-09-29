@@ -622,6 +622,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar navegação
     initializeNavigation();
     
+    // Inicializar tema
+    initializeTheme();
+    
     // Inicializar seção ativa (Overview)
     setTimeout(() => {
         initializeSimulator();
@@ -641,6 +644,32 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Aplicação inicializada com sucesso!');
 });
 
+// Função para inicializar o sistema de temas
+function initializeTheme() {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    
+    // Verificar tema salvo no localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+    }
+    
+    // Event listener para o botão de alternância
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-theme');
+            
+            // Salvar preferência no localStorage
+            if (body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+}
+
 // Event listener para redimensionamento
 window.addEventListener('resize', function() {
     // Reagir a mudanças de tamanho se necessário
@@ -654,7 +683,8 @@ function debugApp() {
         simulatorValues: {
             valor: document.getElementById('valorOperacao')?.value,
             setor: document.getElementById('setorCategoria')?.value
-        }
+        },
+        currentTheme: document.body.classList.contains('dark-theme') ? 'dark' : 'light'
     });
 }
 
